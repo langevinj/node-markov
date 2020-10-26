@@ -75,7 +75,7 @@ class MarkovMachine {
       }
     }
 
-    console.log(sentArray.join(" "))
+    return sentArray.join(" ")
   }
 }
 
@@ -83,3 +83,7 @@ let mm = new MarkovMachine("the cat in the hat")
 mm.makeText();
 
 //LEFT OFF NEEDING TO WRITE TESTS!!!!!!
+
+module.exports = {
+  MarkovMachine : MarkovMachine
+}
